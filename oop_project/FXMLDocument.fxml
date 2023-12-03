@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="658.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="oop_project.EmergencySituationMangerController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ComboBox fx:id="ComboforEmergency" layoutX="468.0" layoutY="49.0" onAction="#TeamsButtononclick" prefWidth="150.0" promptText="Teams" />
+      <TextField fx:id="InsertId" layoutX="107.0" layoutY="62.0" />
+      <TextField fx:id="InsertName" layoutX="107.0" layoutY="116.0" />
+      <Text layoutX="40.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" AnchorPane.leftAnchor="39.259765625" AnchorPane.rightAnchor="607.740234375">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TableView fx:id="EmercencyEmployerTable" layoutY="348.0" prefHeight="210.0" prefWidth="645.0">
+        <columns>
+          <TableColumn fx:id="EmpId" prefWidth="92.0" text="Employee Id" />
+          <TableColumn fx:id="EmpName" prefWidth="106.0" text="Name" />
+            <TableColumn fx:id="EmpDob" prefWidth="114.0" text="Date of birth" />
+            <TableColumn fx:id="EmpSalary" minWidth="6.0" prefWidth="84.0" text="Salary" />
+            <TableColumn fx:id="EmployerOptionalId" minWidth="6.0" prefWidth="137.0" text="Optional" />
+        </columns>
+      </TableView>
+      <Text layoutX="34.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="17.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dath of birth">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="InsertDob" layoutX="108.0" layoutY="157.0" onAction="#Dob" />
+      <Button layoutX="322.0" layoutY="62.0" mnemonicParsing="false" onAction="#ExecuteOperationonClick" text="Execute button" />
+      <Button layoutX="328.0" layoutY="125.0" mnemonicParsing="false" onAction="#ResetOperationonclick" text="Reset button" />
+      <TextField fx:id="InsertSalary" layoutX="107.0" layoutY="205.0" />
+      <Text layoutX="39.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="InsertFieldId" layoutX="107.0" layoutY="247.0" />
+      <Text layoutX="39.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Optional id">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="323.0" layoutY="182.0" mnemonicParsing="false" onAction="#ExecuteSearchonClick" text="Execute search" />
+      <Button layoutX="344.0" layoutY="224.0" mnemonicParsing="false" onAction="#ShowEmployDataonclick" text="Show" />
+    </children>
+</AnchorPane>

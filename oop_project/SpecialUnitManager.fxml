@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop_project.SpecialUnitManagerController">
+   <children>
+      <TableView fx:id="SpecialunitTable" layoutX="29.0" layoutY="500.0" prefHeight="129.0" prefWidth="609.0">
+        <columns>
+          <TableColumn fx:id="IDcol" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="nameCol" prefWidth="90.0" text="Name" />
+            <TableColumn fx:id="dobCol" prefWidth="100.0" text="Date of Birth" />
+            <TableColumn fx:id="salaryCol" prefWidth="114.0" text="Salary" />
+            <TableColumn fx:id="opIdCol" prefWidth="111.0" text="Optional Id" />
+        </columns>
+      </TableView>
+      <Text layoutX="272.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Special Unit Manager" wrappingWidth="123.13671875">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="InsertId" layoutX="115.0" layoutY="75.0" />
+      <TextField fx:id="InsertName" layoutX="115.0" layoutY="136.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="InsertSalary" layoutX="115.0" layoutY="253.0" prefHeight="25.0" prefWidth="149.0" />
+      <ComboBox fx:id="SpecialUnitCombobox" layoutX="510.0" layoutY="63.0" onAction="#UnitByClick" prefWidth="150.0" promptText="Teams" />
+      <TextField fx:id="InsertOptionalId" layoutX="115.0" layoutY="305.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="15.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" wrappingWidth="54.13671875">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="54.13671875">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth" wrappingWidth="75.13671875">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" wrappingWidth="75.13671875">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Optional Id" wrappingWidth="75.13671875">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="33.0" layoutY="430.0" mnemonicParsing="false" onAction="#ExecuteOperationonClick" prefHeight="25.0" prefWidth="75.0" text="Save" />
+      <Button layoutX="255.0" layoutY="430.0" mnemonicParsing="false" onAction="#ShowDataonClick" prefHeight="13.0" prefWidth="84.0" text="Show Data" />
+      <Button layoutX="357.0" layoutY="430.0" mnemonicParsing="false" onAction="#Resetonclick" text="Reset" />
+      <Button layoutX="595.0" layoutY="430.0" mnemonicParsing="false" onAction="#DeleteonClick" prefHeight="13.0" prefWidth="75.0" text="Delete" />
+      <Button layoutX="416.0" layoutY="430.0" mnemonicParsing="false" onAction="#SwitchtoGraphonClick" text="Graphical Ratio" />
+      <Button layoutX="530.0" layoutY="430.0" mnemonicParsing="false" onAction="#AircraftonClick" text="Aircraft" />
+      <Text layoutX="416.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Id:" wrappingWidth="74.99999088048935">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="395.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Name:" wrappingWidth="96.99999332427979">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="Namelable" layoutX="499.0" layoutY="227.0" prefHeight="13.0" prefWidth="137.0" />
+      <Label fx:id="IdLable" layoutX="499.0" layoutY="193.0" prefHeight="13.0" prefWidth="137.0" />
+      <Text layoutX="392.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     Personal Info" wrappingWidth="123.1367194801569">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="115.0" layoutY="430.0" mnemonicParsing="false" onAction="#ShowTableonclick" prefHeight="25.0" prefWidth="123.0" text="Table view" />
+      <DatePicker fx:id="InsertDob" layoutX="103.0" layoutY="198.0" />
+   </children>
+</AnchorPane>

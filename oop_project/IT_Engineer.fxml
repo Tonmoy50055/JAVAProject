@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="oop_project.IT_EngineerController">
+   <children>
+      <Text layoutX="46.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="57.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
+      <Text layoutX="47.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary" />
+      <Text layoutX="23.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dath of Birth" />
+      <Text layoutX="45.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Id" />
+      <Text layoutX="39.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Name" />
+      <TextField fx:id="InsertId" layoutX="96.0" layoutY="45.0" />
+      <TextField fx:id="InsertNamae" layoutX="96.0" layoutY="81.0" />
+      <TextField fx:id="Insertsalary" layoutX="96.0" layoutY="115.0" />
+      <DatePicker fx:id="InsertDob" layoutX="91.0" layoutY="157.0" />
+      <TextField fx:id="InsertUnitId" layoutX="96.0" layoutY="193.0" />
+      <TextField fx:id="InsertUnitName" layoutX="96.0" layoutY="227.0" />
+      <Button layoutX="361.0" layoutY="45.0" mnemonicParsing="false" onAction="#ExecuteOperationonClick" text="Execute Operation" />
+      <Button layoutX="361.0" layoutY="81.0" mnemonicParsing="false" onAction="#ShowRecordonClick" text="Show Record" />
+      <Button layoutX="361.0" layoutY="123.0" mnemonicParsing="false" onAction="#ReserDataonClick" text="Reset" />
+      <TableView fx:id="TableofIT" layoutX="96.0" layoutY="334.0" prefHeight="200.0" prefWidth="511.0">
+        <columns>
+          <TableColumn fx:id="TableId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="TableName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="TableDob" prefWidth="118.0" text="Dath of Birth" />
+            <TableColumn fx:id="TableSalary" prefWidth="87.0" text="Salary" />
+            <TableColumn fx:id="TableUnitId" prefWidth="75.0" text="Unit Id" />
+            <TableColumn fx:id="TableUnitName" text="Unit Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="361.0" layoutY="166.0" mnemonicParsing="false" onAction="#DeleteButtononClick" text="Delete" />
+      <Button layoutX="358.0" layoutY="206.0" mnemonicParsing="false" onAction="#tableViewonClick" text="TableView" />
+   </children>
+</AnchorPane>
