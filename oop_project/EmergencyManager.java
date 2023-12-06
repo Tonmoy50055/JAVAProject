@@ -23,8 +23,8 @@ public class EmergencyManager  implements Serializable {
     protected final LocalDate Dob;
     protected int salary;
     protected int opid;
-    protected  String unitname;
-    public EmergencyManager(int id, String name, LocalDate Dob, int salary, int opid,String unitname)
+    protected  String unitName;
+    public EmergencyManager(int id, String name, LocalDate Dob, int salary, int opid,String unitName)
     {
     this.id=id;
     //super(id,opid);
@@ -32,16 +32,16 @@ public class EmergencyManager  implements Serializable {
      this.Dob=Dob;
     this.salary=salary;
     this.opid=opid;
-    this.unitname=unitname;
+    this.unitName=unitName;
     
     }
 
-    public void setUnitname(String unitname) {
-        this.unitname = unitname;
+    public void setUnitname(String unitName) {
+        this.unitName = unitName;
     }
 
     public String getUnitname() {
-        return unitname;
+        return unitName;
     }
 
     public void setId(int id) {
@@ -85,7 +85,7 @@ public class EmergencyManager  implements Serializable {
     
     @Override
     public String toString() {
-        return "EmergencyManager{" + "Id=" + id + ", Name=" + name + ",Date of Birth=" + Dob + ", Salary =" + salary +", Optional "+opid +", Unit name="+unitname+'}';
+        return "EmergencyManager{" + "Id=" + id + ", Name=" + name + ",Date of Birth=" + Dob + ", Salary =" + salary +", Optional "+opid +", Unit name="+unitName+'}';
     }
     public void display() {
         System.out.println( "EmergencyManager{" + "Id=" + id + ", Name=" + name + ",Date of Birth=" + Dob + ", Salarye=" + salary +", Optional ID"+opid +'}');
