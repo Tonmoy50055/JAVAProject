@@ -84,12 +84,12 @@ public class EmergencySituationMangerController implements Initializable {
         // TODO
        Employee = FXCollections.observableArrayList();
         
-        EmpId.setCellValueFactory(new PropertyValueFactory<EmergencyManager, Integer>("Employee Id"));
-        EmpName.setCellValueFactory(new PropertyValueFactory<EmergencyManager, String>("Name"));
-        EmpDob.setCellValueFactory(new PropertyValueFactory<EmergencyManager, LocalDate>("Date of birth"));
-        EmpSalary.setCellValueFactory(new PropertyValueFactory<EmergencyManager, Integer>("Salary"));
-        EmergencyEmployerId.setCellValueFactory(new PropertyValueFactory<EmergencyManager, Integer>("Optional"));
-        Unitnamecol.setCellValueFactory(new PropertyValueFactory<EmergencyManager, String>("Unit name"));
+        EmpId.setCellValueFactory(new PropertyValueFactory<EmergencyManager, Integer>("id"));
+        EmpName.setCellValueFactory(new PropertyValueFactory<EmergencyManager, String>("name"));
+        EmpDob.setCellValueFactory(new PropertyValueFactory<EmergencyManager, LocalDate>("Dob"));
+        EmpSalary.setCellValueFactory(new PropertyValueFactory<EmergencyManager, Integer>("salary"));
+        EmergencyEmployerId.setCellValueFactory(new PropertyValueFactory<EmergencyManager, Integer>("opid"));
+        Unitnamecol.setCellValueFactory(new PropertyValueFactory<EmergencyManager, String>("unitName"));
        //ComboforEmergency.getItems().add("Medical team");
         ComboforEmergency.getItems().addAll(
                                            "Medical team",
